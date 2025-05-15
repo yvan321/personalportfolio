@@ -8,6 +8,7 @@ import Education from './sections/Education/Education';
 import Challenges from './sections/Challenges/Challenges';
 import ResumePage from './sections/ResumePage/ResumePage';
 import Contact from './sections/Contact/Contact';
+import Footer from './sections/Footer/Footer';
 
 
 
@@ -42,6 +43,9 @@ function App() {
       </section>
       <section id="contact">
         <Contact />
+      </section>
+      <section id="footer">
+        <Footer />
       </section>
       
     </>

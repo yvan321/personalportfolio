@@ -1,0 +1,183 @@
+.footerContainer {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 2rem;
+  padding-bottom: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.topContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.leftSection {
+  flex: 1;
+  min-width: 250px;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.rightLogoBox {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+
+.motto {
+  font-weight: 500;
+  max-width: 500px;
+  margin-bottom: 1.5rem;
+}
+
+.socialIcons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.socialIcons a {
+  color: var(--text-color);
+  transition: color 0.3s;
+}
+
+.socialIcons a:hover {
+  color: #e63333;
+}
+
+.rightSectionWrapper {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.rightSection {
+  background-color: var(--background-color);
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.linksColumn {
+  display: flex;
+  flex-direction: column;
+  text-align: right; 
+  gap: 0.5rem;
+}
+
+.linksColumn a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.linksColumn a:hover {
+  color: #C21807;
+}
+
+.verticalDivider {
+  width: 4px;
+  height: 100%;
+  background-color: #C21807;
+}
+
+.rightLogoBox {
+  background-color: var(--background-color);
+  padding: 3rem 2rem;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+}
+
+.bottomBar {
+  background-color: #C21807;
+  text-align: center;
+  color: #F7F4F4;
+  padding: 1rem;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+
+
+@media (max-width: 970px) {
+  .topContainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .leftSection {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .rightSectionWrapper {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .rightSection {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .rightLogoBox {
+    display: none;
+  }
+
+  .linksColumn {
+    text-align: center;
+    align-items: center;
+  }
+
+  .verticalDivider {
+    display: none;
+  }
+
+  .rightLogoBox {
+    margin-top: 1rem;
+    padding: 2rem;
+    font-size: 0.9rem;
+    background-color: transparent;
+  }
+
+  .logo {
+    margin: 0 auto 1rem;
+  }
+
+  .motto {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .socialIcons {
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .bottomBar {
+    font-size: 0.9rem;
+  }
+}
