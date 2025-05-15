@@ -1,0 +1,237 @@
+
+.container {
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  overflow-y: auto;
+  padding: 5% 5%;
+  background-image: url('../../assets/newday-bg.svg'); 
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+
+  
+
+
+    span {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+  
+    img {
+      width: 40px;
+    }
+  }
+  
+  [data-theme='dark'] .container {
+    background-image: url('../../assets/skillnight-bg.svg');
+  }
+
+  .skillList {
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    max-width: 26ch;
+  }
+  
+.sectionTitle {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 3rem;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.sectionTitle2 {
+  text-align: center;
+  font-size: 36px;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+  hr {
+    width: 100px;
+    height: 1px;
+    border: none;
+    background-color: var(--text-color);
+    margin: 30px auto;
+  }
+  
+  @media (width >= 800px) {
+    .skillList {
+      max-width: fit-content;
+      gap: 30px;
+  
+      p {
+        font-size: 20px;
+        font-weight: 400 ;
+      }
+    }
+  
+    hr {
+      width: 300px;
+    }
+  }
+
+  
+
+
+
+  .certList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.certButton {
+  background-color: var(--btn-text-color);
+  color: var(--text-color);
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  height: auto;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 15px rgba(0, 187, 255, 1); /* subtle glow */
+}
+
+
+
+[data-theme='dark'] .certButton {
+  background-color: #2e2e2e;
+  color: var(--text-color);
+  box-shadow: 0 0 15px rgba(255, 94, 0, 1);
+}
+
+
+
+.certButton:hover {
+  transform: scale(1.05);
+  background-color: #C21807; /* Light mode default */
+}
+
+
+[data-theme='dark'] .certButton:hover {
+  background-color: #C21807; /* Darker shade for dark mode */
+  color: #ccc;
+}
+
+
+.certIcon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.5rem;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001;
+}
+
+.modalContent {
+  background: var(--background-color);
+  border-radius: 24px;
+  padding: 24px;
+  max-width: 700px;
+  align-items: center;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  margin: auto; /* Center horizontally and vertically */
+}
+
+
+.certHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 10px;
+  
+}
+
+.certIconTitle {
+  width: 40px;
+  height: 40px;
+}
+
+.certIconTitle h2{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  width: 100%;
+}
+
+.certImage {
+  width: 100% !important;
+  max-width: 400px;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+
+.closeButton {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  width: 32px;
+  height: 32px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.closeButton:hover {
+  background-color: #e03e3e;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .modalContent {
+    padding: 5%;
+    max-height: 90vh;
+    width: 80vw;
+  }
+    
+  }
+

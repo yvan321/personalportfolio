@@ -1,0 +1,146 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  padding: 5% 10% 5%;
+  max-width: 1000px;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 3rem;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.timelineContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+}
+
+.timelineItem {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  padding: 1.5rem;
+  background-color: var(--btn-text-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 800px;
+  border-left: 10px solid #C21807;
+}
+
+[data-theme='dark'] .timelineItem {
+      background-color: #151515;
+        border-left: 10px solid #C21807;
+
+
+}
+
+.timelineItem:hover {
+  transform: scale(1.02);
+}
+
+.timelineLeft {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 3px solid #C21807;
+  margin-right: 2rem;
+  padding-right: 1rem;
+  min-width: 120px;
+}
+
+.year {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.iconCircle {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.schoolIcon {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.timelineRight {
+  flex: 1;
+  text-align: right;
+}
+
+.timelineRight h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--text-color);
+    text-align: right;
+}
+
+.timelineRight p {
+  margin-top: 0.5rem;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+    text-align: right;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+.container {
+    padding: 10%;
+}
+
+  .timelineItem {
+    flex-direction: column;
+    align-items: flex-start;
+    border-left: 10px solid #C21807;
+    max-width: 90%;
+  }
+
+  .timelineLeft {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+    border: none;
+  }
+
+  .year {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .iconCircle {
+    width: 60px;
+    height: 60px;
+  }
+
+  .timelineRight h3 {
+    font-size: 1.1rem;
+  }
+
+  .timelineRight p {
+    font-size: 0.9rem;
+  }
+}
