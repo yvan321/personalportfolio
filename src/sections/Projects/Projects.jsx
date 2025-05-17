@@ -42,6 +42,14 @@ import es7 from '../../assets/es7.png';
 import es8 from '../../assets/es8.png';
 import es9 from '../../assets/es9.png';
 import es10 from '../../assets/es10.png';
+import agos1 from '../../assets/agos1.png';
+import agos2 from '../../assets/agos2.png';
+import baker1 from '../../assets/baker1.png';
+import baker2 from '../../assets/baker2.png';
+import baker3 from '../../assets/baker3.png';
+import baker4 from '../../assets/baker4.png';
+
+
 
 
 
@@ -109,7 +117,7 @@ function Projects() {
       p: "A GUI-based inventory system for managing bakery goods and sales.",
       category: "App",
       languages: "Python (Tkinter)",
-      gallery: [zenstore] 
+      gallery: [baker1, baker2, baker3, baker4] 
     },
     {
       src: quintech,
@@ -146,8 +154,8 @@ function Projects() {
       h4: "Agos Water Monitoring and Interruption Alert System",
       p: "An app for monitoring water reserves and sending alerts for water interruptions, promoting conservation and efficient distribution.",
       category: "App",
-      languages: "Python (Flet)",
-      gallery: [zenstore] 
+      languages: "Python (Flet), Arduino",
+      gallery: [agos1, agos2] 
     },
     {
       src: dcsenrollment,

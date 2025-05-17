@@ -206,7 +206,7 @@ function Home() {
           <p className={styles.description}>
             Trust yourself, and you have already paved the way.
           </p>
-          <a >
+          <a href="#contact">
             <button className={styles.messageButton}>
   Message
     <FontAwesomeIcon icon={faEnvelope} style={{ marginRight: '8px' }} />

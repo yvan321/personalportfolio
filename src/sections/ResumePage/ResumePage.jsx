@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
 import styles from "./ResumePageStyles.module.css";
 import myPhoto from "../../assets/toons.png";
 import CV from "../../assets/new-cv.pdf";
 import CVpic from "../../assets/new-cv-png.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function ResumePage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -17,6 +19,14 @@ function ResumePage() {
     document.body.removeChild(link);
     setShowConfirm(false); // Close confirm dialog after download
   };
+
+  useEffect(() => {
+      AOS.init({
+        duration: 1200,
+        once: true,
+        offset: 100,
+      });
+    }, []);
 
   return (
     <section className={styles.container}>
@@ -43,7 +53,7 @@ function ResumePage() {
 
       {isModalOpen && (
         <div className={styles.modalOverlay}>
-          <div className={styles.modalContent}>
+          <div data-aos="zoom-in" className={styles.modalContent}>
             <button className={styles.closeButton} onClick={() => setIsModalOpen(false)}>
               &times;
             </button>
@@ -58,7 +68,7 @@ function ResumePage() {
 
       {showConfirm && (
         <div className={styles.modalOverlay}>
-          <div className={styles.confirmBox}>
+          <div data-aos="zoom-in" className={styles.confirmBox}>
             <h3 className={styles.modalTitle}>Are you sure you want to download the CV?</h3>
             <div className={styles.buttonGroup}>
               <button className={styles.button} onClick={handleDownloadCV}>Yes</button>

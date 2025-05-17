@@ -43,7 +43,7 @@ function ProjectModal({ project, onClose }) {
               </div>
             </>
           ) : (
-            <div className={styles.swiperWrapper}>
+            <div data-aos="zoom-in" className={styles.swiperWrapper}>
               {Array.isArray(project.gallery) && project.gallery.length > 1 ? (
                 <Swiper
                   modules={[Navigation, Pagination]}

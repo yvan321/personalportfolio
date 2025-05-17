@@ -57,12 +57,12 @@ function Contact() {
           <label htmlFor="message" hidden>Message</label>
           <textarea name="message" id="message" placeholder="Message" required></textarea>
         </div>
-        <input className={styles.button} type="submit" value="Submit" />
+            <button type="submit" className={styles.button}>Submit</button>
       </form>
 
       {isSent && (
         <div className={styles.modalOverlay}>
-          <div className={styles.modalContent}>
+          <div data-aos="zoom-in" className={styles.modalContent}>
             <h2>Message Sent!</h2>
             <p>Thank you for reaching out. I will get back to you soon.</p>
             <button className={styles.button} onClick={closeModal}>OK</button>

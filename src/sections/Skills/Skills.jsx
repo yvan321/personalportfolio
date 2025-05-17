@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from './SkillsStyles.module.css';
 import htmllogo from '../../assets/htmllogo.svg';
 import csslogo from '../../assets/csslogo.svg';
@@ -21,7 +21,7 @@ import dean2 from '../../assets/2ndDeans.jpg';
 
 
 
-
+import AOS from "aos";
 import "aos/dist/aos.css";
 
 
@@ -72,6 +72,15 @@ function Skills() {
 
 
   const [selectedCert, setSelectedCert] = useState(null);
+
+   useEffect(() => {
+        AOS.init({
+          duration: 1200,
+          once: true,
+          offset: 100,
+        });
+      }, []);
+  
   
   
   return (
@@ -108,7 +117,7 @@ function Skills() {
 
       {selectedCert && (
   <div className={styles.modalOverlay}>
-    <div className={styles.modalContent}>
+    <div data-aos="zoom-in" className={styles.modalContent}>
       <button className={styles.closeButton} onClick={() => setSelectedCert(null)}>×</button>
       
       <div className={styles.certHeader}>
