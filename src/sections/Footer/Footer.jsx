@@ -21,7 +21,7 @@ function Footer() {
             Trust yourself, and you have already paved the way.
           </p>
           <div className={styles.socialIcons}>
-            <a href="https:/facebook.com/nycaliwan.03/" aria-label="Facebook"><FaFacebook /></a>
+            <a href="https://facebook.com/nycaliwan.03/" aria-label="Facebook"><FaFacebook /></a>
             <a href="https://www.instagram.com/yvancali_1/" aria-label="Instagram"><FaInstagram /></a>
             <a href="https://github.com/yvan321" aria-label="GitHub"><FaGithub /></a>
             <a href="https://www.linkedin.com/in/neil-yvan-caliwan-237325175/" aria-label="LinkedIn"><FaLinkedin /></a>
