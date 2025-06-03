@@ -193,7 +193,7 @@ function Home() {
             <span>{words[currentWordIndex]}</span>
           </h2>
           <span>
-            <a href="https:/facebook.com/nycaliwan.03/" target="_blank" rel="noopener noreferrer">
+            <a href="https://facebook.com/nycaliwan.03/" target="_blank" rel="noopener noreferrer">
               <img src={facebookIcon} alt="Facebook icon" />
             </a>
             <a href="https://github.com/yvan321" target="_blank" rel="noopener noreferrer">
