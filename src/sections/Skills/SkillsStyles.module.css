@@ -6,7 +6,7 @@
   text-align: center;
   overflow-y: auto;
   padding: 5% 5%;
-  background-image: url('../../assets/newday-bg.svg'); 
+  background-image: url('../../assets/light-bg.png'); 
   background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;
@@ -27,7 +27,7 @@
   }
   
   [data-theme='dark'] .container {
-    background-image: url('../../assets/skillnight-bg.svg');
+    background-image: url('../../assets/dark-bg.png');
   }
 
   .skillList {
