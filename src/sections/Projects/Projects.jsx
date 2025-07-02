@@ -10,6 +10,7 @@ import agoswater from '../../assets/agos-water.png';
 import cvsuwebsite from '../../assets/cvsuwebsite.png';
 import dcsenrollment from '../../assets/dcs-enrollment.png';
 import calcuny from '../../assets/calcuny.png';
+import kix from '../../assets/kixlogo.png';
 
 import michiels1 from '../../assets/michiels1.png';
 import calcuny1 from '../../assets/calcuny1.png';
@@ -48,6 +49,15 @@ import baker1 from '../../assets/baker1.png';
 import baker2 from '../../assets/baker2.png';
 import baker3 from '../../assets/baker3.png';
 import baker4 from '../../assets/baker4.png';
+import kix1 from '../../assets/kix1.png';
+import kix2 from '../../assets/kix2.png';
+import kix3 from '../../assets/kix3.png';
+import kix4 from '../../assets/kix4.png';
+import kix5 from '../../assets/kix5.png';
+import kix6 from '../../assets/kix6.png';
+import kix7 from '../../assets/kix7.png';
+import kix8 from '../../assets/kix8.png';
+
 
 
 
@@ -176,6 +186,16 @@ function Projects() {
       category: "Web",
       languages: "JavaScript (React)",
       gallery: [calcuny1, calcuny2]
+    },
+    {
+      src: kix,
+      h3: "Kix",
+      h4: "Kix E-Commerce Website",
+      p: "A responsive e-commerce website built using React (Next.js) for showcasing and selling products online.",
+      link: "https://kix-ten.vercel.app/",
+      category: "Web",
+      languages: "JavaScript (NextJs)",
+      gallery: [kix1, kix2, kix3, kix4, kix5, kix6, kix7, kix8]
     },
   ];
 
